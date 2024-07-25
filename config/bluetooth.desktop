@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Bluetooth
+Comment=Bluetooth Menu run on Rofi
+GenericName=Rofi Menu
+Exec=/home/anuraag/Repositories/rofi-bluetooth/rofi-bluetooth
+Icon=bluetooth
+Type=Application
+Categories=Network;
+Path=/home/anuraag/Repositories/rofi-bluetooth
