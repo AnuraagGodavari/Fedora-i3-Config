@@ -110,7 +110,7 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
-# focus the child container
+
 #bindsym $mod+d focus child
 
 # Define names for default workspaces for which we configure key bindings later on.
@@ -229,8 +229,9 @@ set $gruv_orrery "Pictures/gruvbox_A Philosopher Lecturing on the Orrery, Joseph
 set $gruv_bibbu "Pictures/GruvBibbu.png"
 set $orrery "Pictures/A Philosopher Lecturing on the Orrery, Joseph Wright of Derby.png"
 set $vajrabhairava "Pictures/Thangka_Depicting_Vajrabhairava,_ca._1740,_Sotheby's.jpg"
-set $yearofthecat "Pictures/YearOfTheCat.jpg"
+set $yearofthecat "Pictures/yearofthecat1.jpg"
 set $mountainscene "Pictures/Mountain Scene, George Landseer.jpg"
+set $wukong "Pictures/Wukong Icon.png"
 
 exec_always --no-startup-id feh --bg-center $mountainscene --image-bg "#3c3836"
 
@@ -296,4 +297,7 @@ client.urgent           $red $red $white $red $red
 ## Screenshots
 bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/Captures/$(date).jpg"
 bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/Captures/$(date).jpg"
+
 bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/Captures/$(date).jpg"
+
+bindsym $mod+Shift+s exec --no-startup-id i3lock
