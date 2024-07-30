@@ -8,6 +8,7 @@ configpath='config'
 
 sudo cp $configpath/40-libinput.conf /usr/share/X11/xorg.conf.d/40-libinput.conf
 sudo cp $configpath/bluetooth.desktop /usr/share/applications/bluetooth.desktop
+sudo cp $config/discordflatpak.desktop /var/lib/flatpak/app/com.discordapp.Discord/current/active/export/share/applications/com.discordapp.Discord.desktop
 
 cp $configpath/i3               ~/.config/i3/config
 cp $configpath/.zshrc           ~/.zshrc
