@@ -7,12 +7,14 @@ echo "Working in $(pwd)"
 
 # Install Packages
 
-sudo dnf install \
+sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+sudo dnf install -y \
     akmod-nvidia \
     alacritty \
     alsa-sof-firmware \
     arandr \
-    bluetoothctl \
+    bluez bluez-tools \
     brightnessctl \
     cmatrix \
     cowsay \
@@ -24,13 +26,14 @@ sudo dnf install \
     lightdm \
     lutris \
     nemo \
+    neovim \
     steam \
     rofi \
     picom \
+    vim \
     xorg-x11-drv-nvidia \
-    xort-x11-drv-nvidia-cuda \
-    zsh \ 
-    -y \
+    xorg-x11-drv-nvidia-cuda \
+    zsh 
 
 # Enable LightDm
 sudo systemctl enable lightdm.service
@@ -49,7 +52,6 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 
 sudo dnf install libatomic glibc alsa-lib GConf2 libnotify nspr nss libstdc++ libX11 libXtst libappindicator libcxx libXScrnSaver
 
-sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf install discord
 sudo flatpak install discord
 
@@ -72,4 +74,4 @@ sudo dnf install codium
 
 # Rofi Bluetooth
 
-git clone git@github.com:ClydeDroid/rofi-bluetooth.git
+git clone git@github.com:ClydeDroid/rofi-bluetooth.git ~/Repositories/rofi-bluetooth
